@@ -1,0 +1,19 @@
+
+
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Open+Sans" rel="stylesheet">
+
+
+
+<h1>New Game</h1>
+<ul>
+  <% @letters.each do |letter| %>
+    <li class = "lettrine"><%= letter %></li>
+  <% end %>
+</ul>
+
+
+<p>What is your longest word you can find?</p>
+<form action="/score" method="get">
+  <input type="text" name="food_type" placeholder= "">
+  <input type="submit">
+</form>
